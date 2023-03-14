@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Booking;
 
 class BookingController extends Controller
 {
@@ -23,7 +24,7 @@ class BookingController extends Controller
      */
     public function create()
     {
-        //
+        return view('booking.booking_create');
     }
 
     /**
@@ -34,7 +35,12 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $booking = Booking::create([
+        //     'additional_information',
+        //     'departure_date',
+        //     'return_date',
+        //     'status',
+        // ]);
     }
 
     /**
